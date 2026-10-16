@@ -1,0 +1,19 @@
+{
+  "name": "biblioteca-digital",
+  "version": "1.0.0",
+  "description": "Sistema de biblioteca digital",
+  "homepage": "https://github.com/Ronisank/Biblioteca_Digital#readme",
+  "bugs": {
+    "url": "https://github.com/Ronisank/Biblioteca_Digital/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ronisank/Biblioteca_Digital.git"
+  },
+  "author": "Roni Rodrigues",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
