@@ -14,14 +14,14 @@ export function CadastrarUsuario(usuario) {
             resolve(Swal.fire({
                 position: "top-end",
                 icon: "success",
-                title: "Aluno cadastrado com sucesso!",
+                title: "Usuário cadastrado com sucesso!",
                 showConfirmButton: false,
                 timer: 1500
             }));
         } else {
 
             reject(Swal.fire({
-                title: "Erro ao cadastrar o aluno",
+                title: "Erro ao cadastrar o usuario",
                 icon: "error",
                 draggable: true
             }));
