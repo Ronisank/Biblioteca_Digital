@@ -1,4 +1,4 @@
-const livrosCadastrados = [
+export const livrosCadastrados = [
     {
         id: 1,
         titulo: "JavaScript para Iniciantes",
