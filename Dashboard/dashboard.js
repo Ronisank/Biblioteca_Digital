@@ -18,7 +18,7 @@ dashboard.addEventListener('click', () => window.location.href = '../dashboard/d
 
 
 cadastroAlunos.addEventListener('click', () => {
-    navigation.navigate('../cadastro-alunos/cadastroAluno.html');
+    navigation.navigate('../cadastro-Usuario/cadastro-usuario.html');
 })
 
 sair.addEventListener('click', () => {
