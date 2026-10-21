@@ -104,6 +104,6 @@ Por ser uma aplicação web estática baseada em HTML, CSS e JavaScript puro (co
 Embora o sistema seja funcional, a arquitetura permite diversas evoluções:
 
 *   **Integração com Backend e Banco de Dados:** Substituir o armazenamento local/em memória por uma API REST e um banco de dados real (ex: Node.js com PostgreSQL ou MongoDB) para persistência segura dos dados.
-*   **Controle de Permissões (RBAC):** Criar perfis diferentes de acesso (Administrador vs. Leitor comum), restringindo áreas como cadastro de livros apenas a bibliotecários.
+*   **Controle de Permissões (RBAC):** Criar perfis diferentes de acesso (Administrador vs. Leitor comum), restringindo áreas como Cadastro Livros apenas a bibliotecários.
 *   **Notificações Automáticas:** Implementar disparo de e-mails para alertar os usuários sobre atrasos nas devoluções ou livros que ficaram disponíveis.
 *   **Busca Avançada:** Adicionar filtros compostos (por autor, gênero, ano de publicação) e paginação na listagem de livros para lidar com grandes volumes de dados.

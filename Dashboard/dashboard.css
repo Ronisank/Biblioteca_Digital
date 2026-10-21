@@ -48,10 +48,10 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100px;
-  background-color: var(--roxoClaro);
+  background-color: var(--branco);
   padding: 16px;
   border-radius: 12px;
-  border: 1px solid var(--roxoEscuro);
+  border: 1px solid var(--azulClaro);
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .cardTotal:hover {
@@ -59,14 +59,14 @@
 }
 .cardTotal{
   font-size: 1.5rem;
-  color: var(--roxoPrimario);
+  color: var(--azulProfundo);
   font-weight: bold;
   text-align: right;
 }
 .cardTotal h2 {
   font-size: 1rem;
   font-weight: bold;
-  color: var(--roxoEscuro);
+  color: var(--azulClaro);
   margin: 0;
 }
 .cardCurso {
@@ -78,8 +78,8 @@
   gap: 16px;
   text-align: center;
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
-  background-color: var(--roxoClaro);
-  border: 1px solid var(--roxoEscuro);
+  background-color: var(--branco);
+  border: 1px solid var(--azulClaro);
 }
 .cardCurso:hover {
   transform: translateY(-2px);
@@ -92,12 +92,12 @@
   justify-content: center;
 }
 .infoCurso h3{
-  color: var(--roxoEscuro);
+  color: var(--azulClaro);
   margin-bottom: 10px;
 }
 .infoCurso p {
   max-width: 100%;
-  color: var(--roxoPrimario);
+  color: var(--azulProfundo);
 }
 .iconeCurso {
   width: 60px;
@@ -106,7 +106,7 @@
   padding: 5px;
 }
 .textoSpan{
-  color: var(--roxoEscuro);
+  color: var(--azulClaro);
   font-size: 1.6rem;
   font-weight: bolder;
 }
@@ -140,8 +140,8 @@
     padding: 24px;
     text-align: center;
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
-    background-color: var(--roxoClaro);
-    border: 1px solid var(--roxoEscuro);
+    background-color: var(--branco);
+    border: 1px solid var(--azulClaro);
   }
   .painelCardCursos {
     display: flex;

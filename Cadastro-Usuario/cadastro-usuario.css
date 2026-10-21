@@ -2,13 +2,13 @@
   box-sizing: border-box;
 }
 .sectionForm h1 {
-  color: var(--roxoPrimario);
+  color: var(--azulProfundo);
   font-size: 1.6rem;
 }
 fieldset {
   border-radius: 10px;
-  border: 2px solid var(--roxoPrimario);
-  color: var(--roxoEscuro);
+  border: 2px solid var(--azulProfundo);
+  color: var(--azulClaro);
   padding: 10px;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -39,7 +39,7 @@ legend {
   min-width: 0;
 }
 .borda-interna {
-  border-top: 2px solid var(--roxoPrimario);
+  border-top: 2px solid var(--azulProfundo);
 }
 #cep {
   display: flex;
@@ -59,7 +59,7 @@ input,
 select {
   height: 40px;
   padding: 0 16px;
-  border: 1px solid var(--roxoClaro);
+  border: 1px solid var(--branco);
   border-radius: 8px;
   font-size: 16px;
   box-sizing: border-box;
@@ -69,7 +69,7 @@ select {
 input:focus,
 select:focus {
   outline: none;
-  border-color: var(--roxoPrimario);
+  border-color: var(--azulProfundo);
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 .containerBtn {
@@ -80,7 +80,7 @@ select:focus {
 .btnSalvar {
   width: 20%;
   height: 46px;
-  background-color: var(--roxoPrimario);
+  background-color: var(--azulProfundo);
   color: white;
   border: none;
   border-radius: 8px;
@@ -128,8 +128,8 @@ select:focus {
   }
   fieldset {
     border-radius: 10px;
-    border: 2px solid var(--roxoPrimario);
-    color: var(--roxoEscuro);
+    border: 2px solid var(--azulProfundo);
+    color: var(--azulClaro);
     margin-bottom: 20px;
     width: 100%;
     box-sizing: border-box;

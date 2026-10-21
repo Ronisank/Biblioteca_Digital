@@ -12,13 +12,13 @@ table {
 
 th,
 td {
-  border: 1px solid var(--roxoEscuro);
+  border: 1px solid var(--azulClaro);
   padding: 12px;
 }
 
 th {
-  background-color: var(--roxoPrimario);
-  color: var(--roxoClaro);
+  background-color: var(--azulProfundo);
+  color: var(--branco);
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.9rem;
@@ -41,7 +41,7 @@ td {
   th,
   td {
     padding: 12px;
-    border: 1px solid var(--roxoEscuro);
+    border: 1px solid var(--azulClaro);
     text-align: left;
   }
 
