@@ -42,33 +42,38 @@ function listarEstatisticas() {
                 cursos.innerHTML += `<div class="cardCurso">
                 <div class="infoCurso">
                      <h3>Total de livros no acervo:</h3>
-                     <span class="textoSpan">${dados.acervo}</span>
+                     <span class="textoSpan" data-valor="${dados.acervo}">0</span>
                </div>
            </div>`;
                 cursos.innerHTML += `<div class="cardCurso">
                 <div class="infoCurso">
                      <h3>Livros disponíveis no acervo:</h3>
-                     <span class="textoSpan">${dados.acervoDisponivel}</span>
+                     <span class="textoSpan" data-valor="${dados.acervoDisponivel}">0</span>
                </div>
            </div>`;
                 cursos.innerHTML += `<div class="cardCurso">
                 <div class="infoCurso">
                      <h3>Livros indisponíveis no acervo: </h3>
-                     <span class="textoSpan">${dados.acervoIndisponivel}</span>
+                     <span class="textoSpan" data-valor="${dados.acervoIndisponivel}">0</span>
                </div>
            </div>`;
                 cursos.innerHTML += `<div class="cardCurso">
                 <div class="infoCurso">
                      <h3>Total de páginas no acervo: </h3>
-                     <span class="textoSpan">${dados.totalPaginasAcervo}</span>
+                     <span class="textoSpan" data-valor="${dados.totalPaginasAcervo}">0</span>
                </div>
            </div>`;
                 cursos.innerHTML += `<div class="cardCurso">
                 <div class="infoCurso">
                      <h3>Média de páginas no acervo:</h3>
-                     <span class="textoSpan">${dados.mediaPaginasAcervo}</span>
+                     <span class="textoSpan" data-valor="${dados.mediaPaginasAcervo}">0</span>
                </div>
            </div>`;
+            const numeros = cursos.querySelectorAll(".textoSpan");
+
+            numeros.forEach((numero) => {
+                animarNumero(numero);
+            });
             })
                 .catch((erro) => {
                     erroCursos.innerHTML = `<div class="erroCursos"><p class="hidden">${erro}</p></div>`
@@ -79,6 +84,31 @@ function listarEstatisticas() {
                     console.log("Verificação finalizada.");
                 });
         // })
+}
+function animarNumero(elemento) {
+    const valorFinal = Number(elemento.dataset.valor);
+    const duracao = 1500; // 1,5 segundo
+    let inicio = null;
+
+    function atualizar(tempoAtual) {
+        if (inicio === null) inicio = tempoAtual;
+
+        const progresso = Math.min(
+            (tempoAtual - inicio) / duracao, 1
+        );
+
+        const valorAtual = Math.floor(progresso * valorFinal);
+
+        elemento.textContent = valorAtual.toLocaleString("pt-BR");
+
+        if (progresso < 1) {
+            requestAnimationFrame(atualizar);
+        } else {
+            elemento.textContent = valorFinal.toLocaleString("pt-BR");
+        }
+    }
+
+    requestAnimationFrame(atualizar);
 }
 
 listarEstatisticas();
