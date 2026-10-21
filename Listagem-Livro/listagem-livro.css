@@ -1,0 +1,54 @@
+.sectionForm{
+    margin-top: 15px;
+}
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 3px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+th,
+td {
+  border: 1px solid var(--azulClaro);
+  padding: 12px;
+}
+
+th {
+  background-color: var(--azulProfundo);
+  color: var(--branco);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  text-align: left; 
+}
+
+/*? ------ RESPONSIVIDADE --------*/
+
+@media screen and (max-width: 768px) {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    border: 1px solid var(--azulClaro);
+    text-align: left;
+  }
+
+  .sectionForm {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 400px;
+  }
+}
