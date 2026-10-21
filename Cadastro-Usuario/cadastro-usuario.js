@@ -1,7 +1,9 @@
-import { Usuario } from "../js/usuario.js";
+import { Usuario } from "../js/Usuario.js";
 import { CadastrarUsuario } from "../js/usuarios.js";
 
 const dashboard = document.getElementById('dashboard');
+const cadastroLivro = document.getElementById('cadastroLivro');
+const listarLivro = document.getElementById('listarLivro');
 const usuarioLogin = document.querySelector('.nomeUsuario');
 const sair = document.getElementById('sair');
 const cep = document.getElementById('cep');
@@ -24,6 +26,21 @@ const usuarioString = sessionStorage.getItem('usuario');
 const usuarioSession = JSON.parse(usuarioString);
 
 usuarioLogin.textContent = usuarioSession.nome;
+
+dashboard.addEventListener('click', () => window.location.href = '../dashboard/dashboard.html');
+
+cadastroLivro.addEventListener('click', () => {
+    navigation.navigate('../cadastro-Livro/cadastro-livro.html');
+});
+listarLivro.addEventListener('click', () => {
+    navigation.navigate('../Listagem-Livro/listagem-livro.html')
+})
+
+sair.addEventListener('click', () => {
+    sessionStorage.removeItem('usuario');
+    navigation.navigate('../login/login.html');
+
+});
 
 
 //* \/---campos preenchidos pela API ViaCep---\/
@@ -217,12 +234,4 @@ btnSalvar.addEventListener('click', () => {
     CadastrarUsuario(novoUsuario);
     formulario.reset();
     btnSalvar.disabled = true;
-});
-
-dashboard.addEventListener('click', () => window.location.href = '../dashboard/dashboard.html');
-
-sair.addEventListener('click', () => {
-    sessionStorage.removeItem('usuario');
-    navigation.navigate('../login/login.html');
-
 });
