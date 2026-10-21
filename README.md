@@ -103,31 +103,31 @@ Por ser uma aplicação web estática baseada em HTML, CSS e JavaScript puro (co
 ### Login
 
 📷 <p align="center">
-  <img src="assets/images-readme/TelaLogin.PNG" alt="Tela Login" width="400">
+  <img src="assets/images-readme/TelaLogin.PNG" alt="Tela Login" width="500">
 </p>
 
 ### Dashboard
 
 📷 <p align="center">
-  <img src="assets/images-readme/TelaDashboard.PNG" alt="Tela Dashboard" width="400">
+  <img src="assets/images-readme/TelaDashboard.PNG" alt="Tela Dashboard" width="500">
 </p>
 
 ### Cadastro de Usuários
 
 📷 <p align="center">
-  <img src="assets/images-readme/TelaCadUsuario.PNG" alt="Tela cadastro" width="400">
+  <img src="assets/images-readme/TelaCadUsuario.PNG" alt="Tela cadastro" width="500">
 </p>
 
 ### Cadastro de Livros
 
 📷 <p align="center">
-  <img src="assets/images-readme/TelaCadLivro.PNG" alt="Tela cadastro" width="400">
+  <img src="assets/images-readme/TelaCadLivro.PNG" alt="Tela cadastro" width="500">
 </p>
 
 ### Listar Livros
 
 📷 <p align="center">
-  <img src="assets/images-readme/TelaListarLivros.PNG" alt="Tela cadastro" width="400">
+  <img src="assets/images-readme/TelaListarLivros.PNG" alt="Tela cadastro" width="500">
 </p>
 
 ## 📱 Prints – Mobile
@@ -135,31 +135,31 @@ Por ser uma aplicação web estática baseada em HTML, CSS e JavaScript puro (co
 ### Login
 
 📷 <p align="center">
-  <img src="assets/images-readme/TelaLoginMobile.PNG" alt="Tela login-mobile" width="300">
+  <img src="assets/images-readme/TelaLoginMobile.PNG" alt="Tela login-mobile" width="350">
 </p>
 
 ### Dashboard
 
 📷 <p align="center">
-  <img src="assets/images-readme/TelaResponsiva.PNG" alt="Tela Dashboard-Mobile" width="300">
+  <img src="assets/images-readme/TelaResponsiva.PNG" alt="Tela Dashboard-Mobile" width="350">
 </p>
 
 ### Cadastro de Usuários
 
 📷 <p align="center">
-  <img src="assets/images-readme/TelaRespCadUser.PNG" alt="Tela cadastro-mobile" width="300">
+  <img src="assets/images-readme/TelaRespCadUser.PNG" alt="Tela cadastro-mobile" width="350">
 </p>
 
 ### Cadastro de Livros
 
 📷 <p align="center">
-  <img src="assets/images-readme/TelaResponCadLivro.PNG" alt="Tela cadastro" width="400">
+  <img src="assets/images-readme/TelaResponCadLivro.PNG" alt="Tela cadastro" width="350">
 </p>
 
 ### Listar Livros
 
 📷 <p align="center">
-  <img src="assets/images-readme/TelaRespTabela.PNG" alt="Tela cadastro" width="400">
+  <img src="assets/images-readme/TelaRespTabela.PNG" alt="Tela cadastro" width="350">
 </p>
 
 ---
