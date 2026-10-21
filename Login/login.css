@@ -48,13 +48,13 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
-.imgLivro{
+.imgLivro {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 0;
 }
-#iconeLivro{
+#iconeLivro {
   width: 150px;
   padding: 0;
 }
@@ -70,10 +70,9 @@ p {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-
 }
 
-label{
+label {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--cinzaMedio);
@@ -114,8 +113,7 @@ input:focus {
   align-items: center;
   justify-content: center;
 }
-#btn-senha
-img {
+#btn-senha img {
   width: 32px;
 }
 
@@ -169,13 +167,11 @@ a {
     background-color: var(--cinzaClaro);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    /* overflow: hidden; */
-    /* margin: 20px; */
     text-align: center;
   }
-#labelUsuario{
-text-align: start;
-}
+  #labelUsuario {
+    text-align: start;
+  }
   #meuFormulario {
     display: flex;
     flex-direction: column;
@@ -185,16 +181,22 @@ text-align: start;
     height: 50vh;
     padding: 5% 12%;
     box-sizing: border-box;
-    }
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
   .imgTelaLogin {
-    background-image: url("../assets/imagens/telaLogin-Mobile.jpg");
-    background-size:cover;
+    background-image: url("../assets/images/imgLoginMobile.png");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     width: 100%;
-    aspect-ratio: 2.5/1;
-
+    aspect-ratio: 2/1;
+    margin-bottom: 20px;
+  }
+  #iconeLivro {
+    width: 90px;
   }
   #btnEntrar {
     width: 100%;
