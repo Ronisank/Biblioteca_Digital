@@ -6,6 +6,8 @@ const sair = document.getElementById('sair');
 const usuario = document.querySelector('.nomeUsuario');
 const cursos = document.getElementById('cursosUsuario');
 const cadastroAlunos = document.getElementById('cadastro');
+const cadastroLivro = document.getElementById('cadastroLivro');
+const listarLivro = document.getElementById('listarLivro');
 const erroCursos = document.querySelector('.erroCursos');
 
 const usuarioString = sessionStorage.getItem('usuario');
@@ -19,6 +21,12 @@ dashboard.addEventListener('click', () => window.location.href = '../dashboard/d
 
 cadastroAlunos.addEventListener('click', () => {
     navigation.navigate('../cadastro-Usuario/cadastro-usuario.html');
+})
+cadastroLivro.addEventListener('click', () => {
+    navigation.navigate('../cadastro-Livro/cadastro-livro.html');
+})
+listarLivro.addEventListener('click', () => {
+    navigation.navigate('../Listagem-Livro/listagem-livro.html');
 })
 
 sair.addEventListener('click', () => {
@@ -34,6 +42,7 @@ function listarEstatisticas() {
                 cursos.innerHTML += `<div class="cardCurso">
                 <div class="infoCurso">
                      <h3>Total de livros no acervo: ${dados.acervo}</h3>
+                     <span class="textoSpan">${dados.acervo}</span>
                </div>
            </div>`;
                 cursos.innerHTML += `<div class="cardCurso">
