@@ -1,0 +1,212 @@
+/* Cor Primária (Menu lateral, Cabeçalhos): Azul Profundo (#1E3A8A) - Traz seriedade e foco.
+
+Cor Secundária (Destaques, Links ativos): Azul Claro/Royal (#3B82F6) - Usado para interações de foco e abas ativas.
+
+Cor de Fundo (Background geral): Cinza Muito Claro (#F3F4F6 ou #F8FAFC) - Cansa menos a vista em leituras prolongadas.
+
+Superfícies (Cards, Modais, Formulários): Branco (#FFFFFF) - Cria contraste para destacar os dados.
+
+Texto Principal: Cinza Escuro/Chumbo (#1E293B) - Melhor para leitura do que o preto puro.
+
+Texto Secundário (Labels, placeholders): Cinza Médio (#64748B).
+
+Botões e Ações (Feedback):
+
+Sucesso/Salvar/Cadastrar: Verde Esmeralda (#10B981)
+
+Ações Primárias: Azul Claro (#3B82F6)
+
+Alerta/Excluir: Vermelho Coral (#EF4444)
+
+Aviso/Empréstimo Atrasado: Laranja (#F59E0B)
+
+Fonte Principal: Inter ou Roboto (Importada via Google Fonts).
+
+Tamanhos sugeridos (Base 16px):
+
+h1 (Títulos de Página - ex: "Dashboard", "Acervo"): 24px a 32px (Font-weight: 700)
+
+h2 (Subtítulos - ex: "Livros Recentes"): 20px (Font-weight: 600)
+
+body (Textos de tabelas, listas): 16px (Font-weight: 400)
+
+small (Tags, categorias, datas menores): 12px a 14px (Font-weight: 400 ou 500)
+
+Botões: 16px (Font-weight: 600, geralmente em maiúsculas suaves ou Capitalized)
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+/* ?Paleta de cores projeto */
+:root {
+  --roxoPrimario: #1E3A8A;        /*Azul Profundo - Menu lateral, Cabeçalhos */
+  --roxoEscuro: #3B82F6;          /*Cor Secundária Destaques, Links ativos: Azul Claro/Royal*/
+  --roxoClaro: #FFFFFF;           /*Superfícies (Cards, Modais, Formulários): Branco (#FFFFFF)*/
+  --cinzaClaro: #F3F4F6;          /*Background geral: Cinza Muito Claro*/
+  --cinzaMedio: #64748B;          /*Cinza Médio Texto Secundário (Labels, placeholders)*/
+  --cinzaEscuro:#1E293B;          /*Texto Principal: Cinza Escuro/Chumbo (#1E293B)*/
+  --verde: #10B981;               /*Verde Esmeralda - Botões e Ações: Sucesso/Salvar/Cadastrar*/
+  --vermelhoErro: #EF4444;        /*Alerta/Excluir: Vermelho Coral (#EF4444)*/
+  --vermelhoErroBack: #f4d6d2;
+  --vermelhoErroBorda: #f0c5c1;
+  --laranja: #F59E0B;             /*Aviso/Empréstimo Atrasado: Laranja*/
+}
+
+body {
+  background-color: var(--roxoPrimario);
+}
+.containerCabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+.cabecalhoEsquerdo {
+  display: flex;
+  align-items: center;
+}
+.cabecalhoDireito {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  color: var(--roxoClaro);
+  padding: 10px;
+}
+.imgCabecalho {
+  width: 100px;
+  height: 100px;
+  background-color: var(--roxoClaro);
+  border-radius: 50px;
+}
+.imgUsuario {
+  width: 60px;
+}
+h3 {
+  color: var(--roxoClaro);
+}
+.container {
+  display: flex;
+  background-color: var(--cinzaClaro);
+  border-radius: 15px;
+  min-height: 100vh;
+  align-items: stretch;
+}
+aside {
+  width: 250px;
+  background-color: var(--roxoPrimario);
+  height: auto;
+  border-radius: 15px;
+  margin: 10px;
+  color: var(--roxoClaro);
+}
+.navegar {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 15px;
+  border-radius: 15px;
+}
+img {
+  width: 50px;
+  margin-right: 15px;
+}
+li:hover {
+  background-color: var(--roxoEscuro);
+  cursor: pointer;
+}
+#menuLateralCursos {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+#menuLateralDevolucao {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/*? ------ RESPONSIVIDADE --------*/
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-bottom: 70px;
+  }
+
+  aside {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    background-color: var(--roxoPrimario);
+    color: var(--roxoClaro);
+    margin: 0;
+    border-radius: 0;
+  }
+  aside ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  aside li {
+    flex: 1;
+    text-align: center;
+    font-size: 0.8rem;
+    flex-direction: column;
+  }
+  img{
+    margin-bottom: 5px;
+    width: 30px;
+  }
+  .containerCabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  height: 10vh;
+}
+.cabecalhoEsquerdo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cabecalhoDireito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: var(--roxoClaro);
+  padding: 10px;
+  font-size: 1rem;
+}
+.imgCabecalho {
+  width: 30px;
+  height: 30px;
+  background-color: var(--roxoClaro);
+  border-radius: 50px;
+}
+.imgUsuario {
+  width: 40px;
+}
+h3 {
+  color: var(--roxoClaro);
+  font-size: 1rem;
+}
+#menuLateralCursos {
+  opacity: 0.35;
+}
+}
