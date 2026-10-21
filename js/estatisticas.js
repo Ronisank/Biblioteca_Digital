@@ -1,5 +1,3 @@
-
-// let estatisticsAcervo;
 export function exibirEstatisticas(livros) {
     return new Promise((resolve, reject) => {
         if (livros.length > 0) {
