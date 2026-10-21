@@ -33,7 +33,8 @@ function listarEstatisticas() {
 
                 cursos.innerHTML += `<div class="cardCurso">
                 <div class="infoCurso">
-                     <h3>Total de livros no acervo: ${dados.acervo}</h3>
+                     <h3>Total de livros no acervo:</h3>
+                     <span class="textoSpan">${dados.acervo}</span>
                </div>
            </div>`;
                 cursos.innerHTML += `<div class="cardCurso">

@@ -42,9 +42,9 @@ Botões: 16px (Font-weight: 600, geralmente em maiúsculas suaves ou Capitalized
 }
 /* ?Paleta de cores projeto */
 :root {
-  --roxoPrimario: #1E3A8A;        /*Azul Profundo - Menu lateral, Cabeçalhos */
-  --roxoEscuro: #3B82F6;          /*Cor Secundária Destaques, Links ativos: Azul Claro/Royal*/
-  --roxoClaro: #FFFFFF;           /*Superfícies (Cards, Modais, Formulários): Branco (#FFFFFF)*/
+  --azulProfundo: #1E3A8A;        /*Azul Profundo - Menu lateral, Cabeçalhos */
+  --azulClaro: #3B82F6;          /*Cor Secundária Destaques, Links ativos: Azul Claro/Royal*/
+  --branco: #FFFFFF;           /*Superfícies (Cards, Modais, Formulários): Branco (#FFFFFF)*/
   --cinzaClaro: #F3F4F6;          /*Background geral: Cinza Muito Claro*/
   --cinzaMedio: #64748B;          /*Cinza Médio Texto Secundário (Labels, placeholders)*/
   --cinzaEscuro:#1E293B;          /*Texto Principal: Cinza Escuro/Chumbo (#1E293B)*/
@@ -56,7 +56,7 @@ Botões: 16px (Font-weight: 600, geralmente em maiúsculas suaves ou Capitalized
 }
 
 body {
-  background-color: var(--roxoPrimario);
+  background-color: var(--azulProfundo);
 }
 .containerCabecalho {
   display: flex;
@@ -73,20 +73,20 @@ body {
   align-items: center;
 }
 h1 {
-  color: var(--roxoClaro);
+  color: var(--branco);
   padding: 10px;
 }
 .imgCabecalho {
   width: 100px;
   height: 100px;
-  background-color: var(--roxoClaro);
+  background-color: var(--branco);
   border-radius: 50px;
 }
 .imgUsuario {
   width: 60px;
 }
 h3 {
-  color: var(--roxoClaro);
+  color: var(--branco);
 }
 .container {
   display: flex;
@@ -97,11 +97,11 @@ h3 {
 }
 aside {
   width: 250px;
-  background-color: var(--roxoPrimario);
+  background-color: var(--azulProfundo);
   height: auto;
   border-radius: 15px;
   margin: 10px;
-  color: var(--roxoClaro);
+  color: var(--branco);
 }
 .navegar {
   display: flex;
@@ -121,7 +121,7 @@ img {
   margin-right: 15px;
 }
 li:hover {
-  background-color: var(--roxoEscuro);
+  background-color: var(--azulClaro);
   cursor: pointer;
 }
 #menuLateralCursos {
@@ -137,7 +137,7 @@ li:hover {
 
 @media screen and (max-width: 768px) {
   main {
-    padding-bottom: 70px;
+    padding-bottom: 85px;
   }
 
   aside {
@@ -145,32 +145,42 @@ li:hover {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 85px;
     z-index: 100;
-    background-color: var(--roxoPrimario);
-    color: var(--roxoClaro);
+    background-color: var(--azulProfundo);
+    color: var(--branco);
     margin: 0;
     border-radius: 0;
+    overflow: hidden;
   }
   aside ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: start;
+    align-items: center;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
   }
   aside li {
-    flex: 1;
-    text-align: center;
-    font-size: 0.8rem;
+    flex: 1 1 0;
+    min-width: 0;
+    height: 100%;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.6rem;
+    gap: 4px;
   }
-  img{
-    margin-bottom: 5px;
+  aside li img{
+    margin-bottom: 1px;
     width: 30px;
+    align-items: center;
   }
+
   .containerCabecalho {
   display: flex;
   align-items: center;
@@ -180,6 +190,7 @@ li:hover {
 }
 .cabecalhoEsquerdo {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
@@ -189,24 +200,28 @@ li:hover {
   align-items: center;
 }
 h1 {
-  color: var(--roxoClaro);
+  color: var(--branco);
   padding: 10px;
   font-size: 1rem;
 }
 .imgCabecalho {
   width: 30px;
   height: 30px;
-  background-color: var(--roxoClaro);
+  background-color: var(--branco);
   border-radius: 50px;
 }
 .imgUsuario {
   width: 40px;
 }
 h3 {
-  color: var(--roxoClaro);
+  color: var(--branco);
   font-size: 1rem;
 }
 #menuLateralCursos {
   opacity: 0.35;
+}
+
+#menuLateralDevolucao {
+  opacity: 0.5;
 }
 }
